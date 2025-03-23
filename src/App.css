@@ -1,0 +1,32 @@
+
+/* Base styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bg-background {
+  background-color: #f8f9fa;
+}
+
+.dark .bg-background {
+  background-color: #1a1a1a;
+}
+
+/* Add some visible styles for debug purposes */
+.debug-outline {
+  border: 1px solid red;
+}
