@@ -14,9 +14,9 @@ const AppLayout: React.FC = () => {
   return (
     <div className="flex h-screen overflow-hidden bg-background">
       <Sidebar isOpen={isSidebarOpen} />
-      <div className="flex flex-col flex-1 overflow-hidden">
+      <div className={`flex flex-col flex-1 overflow-hidden ${isSidebarOpen ? 'ml-64' : 'ml-20'} transition-all duration-300`}>
         <Header toggleSidebar={toggleSidebar} isSidebarOpen={isSidebarOpen} />
-        <main className="flex-1 overflow-auto">
+        <main className="flex-1 overflow-auto p-6">
           <Outlet />
         </main>
       </div>

@@ -21,7 +21,7 @@ const Header: React.FC<HeaderProps> = ({ toggleSidebar, isSidebarOpen }) => {
   const { isNotificationPanelOpen, toggleNotificationPanel } = useNotifications();
   
   return (
-    <header className="bg-white dark:bg-gray-800 shadow-sm px-4 py-2 flex items-center justify-between">
+    <header className="bg-white dark:bg-gray-800 shadow-sm px-4 py-4 flex items-center justify-between z-20">
       <div className="flex items-center">
         <button
           onClick={toggleSidebar}

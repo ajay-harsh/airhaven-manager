@@ -11,7 +11,6 @@ import {
   LogOut,
   UserCircle
 } from 'lucide-react';
-import { Avatar } from '@/components/ui/avatar';
 import { useTheme } from '@/contexts/ThemeContext';
 
 interface SidebarProps {
@@ -82,7 +81,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen }) => {
     <aside
       className={`${
         isOpen ? 'w-64' : 'w-20'
-      } transition-all duration-300 ease-in-out fixed inset-y-0 left-0 z-10 flex flex-col bg-white dark:bg-gray-800 border-r border-gray-200 dark:border-gray-700 shadow-sm`}
+      } transition-all duration-300 ease-in-out fixed inset-y-0 left-0 z-30 flex flex-col bg-white dark:bg-gray-800 border-r border-gray-200 dark:border-gray-700 shadow-sm`}
     >
       <div className="flex items-center justify-center h-16 border-b border-gray-200 dark:border-gray-700">
         <span className={`font-bold text-xl text-primary ${!isOpen && 'sr-only'}`}>
