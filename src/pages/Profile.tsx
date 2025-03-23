@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
@@ -92,7 +91,7 @@ const Profile: React.FC = () => {
   const handleSaveProfile = () => {
     toast({
       title: 'Profile Updated',
-      description: 'Your profile information has been updated successfully.',
+      content: 'Your profile information has been updated successfully.',
       duration: 3000,
     });
   };
@@ -105,7 +104,7 @@ const Profile: React.FC = () => {
       setShowTwoFactorSetup(false);
       toast({
         title: 'Two-Factor Authentication Disabled',
-        description: 'Your account is now less secure. We recommend enabling 2FA for better security.',
+        content: 'Your account is now less secure. We recommend enabling 2FA for better security.',
         variant: 'destructive',
         duration: 5000,
       });
@@ -117,7 +116,7 @@ const Profile: React.FC = () => {
     setShowTwoFactorSetup(false);
     toast({
       title: 'Two-Factor Authentication Enabled',
-      description: 'Your account is now more secure with 2FA enabled.',
+      content: 'Your account is now more secure with 2FA enabled.',
       duration: 3000,
     });
   };

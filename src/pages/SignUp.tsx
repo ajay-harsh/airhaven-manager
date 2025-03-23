@@ -98,7 +98,7 @@ const SignUp = () => {
       setTimeout(() => {
         toast({
           title: "Account created",
-          description: "You have successfully created an account. Redirecting to login...",
+          content: "You have successfully created an account. Redirecting to login...",
         });
         
         // Redirect to login after some delay
@@ -110,7 +110,7 @@ const SignUp = () => {
       console.error('Signup error:', error);
       toast({
         title: "Error",
-        description: "There was an error creating your account. Please try again.",
+        content: "There was an error creating your account. Please try again.",
         variant: "destructive",
       });
     } finally {

@@ -19,7 +19,7 @@ const Settings: React.FC = () => {
     toggleTheme();
     toast({
       title: 'Theme Updated',
-      description: `Theme switched to ${theme === 'dark' ? 'light' : 'dark'} mode`,
+      content: `Theme switched to ${theme === 'dark' ? 'light' : 'dark'} mode`,
       duration: 3000,
     });
   };
